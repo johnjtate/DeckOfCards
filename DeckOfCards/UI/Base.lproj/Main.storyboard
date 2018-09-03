@@ -11,46 +11,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeckOfCards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardViewController" customModule="DeckOfCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gj3-DT-O2X">
-                                <rect key="frame" x="37.5" y="100" width="300" height="467"/>
+                                <rect key="frame" x="38" y="100" width="300" height="467"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIK-Az-i8v">
                                         <rect key="frame" x="124" y="0.0" width="52.5" height="26.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26.5" id="rDZ-f4-snj"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc0-9t-TGX">
                                         <rect key="frame" x="129" y="31.5" width="42" height="20.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20.5" id="FVn-Y4-YW8"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-m7-cD1">
-                                        <rect key="frame" x="30" y="57" width="240" height="410"/>
+                                        <rect key="frame" x="37" y="57" width="226" height="410"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ihz-m7-cD1" firstAttribute="leading" secondItem="Gj3-DT-O2X" secondAttribute="leading" constant="37" id="WnX-ni-fu4"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc1-PA-kyL">
-                                <rect key="frame" x="74.5" y="617" width="225" height="30"/>
+                                <rect key="frame" x="75" y="617" width="225" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Draw">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWw-WC-KTl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,6 +66,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="Ihz-m7-cD1" id="jHm-vt-cyv"/>
+                        <outlet property="suitLabel" destination="tIK-Az-i8v" id="GZK-pH-ra8"/>
+                        <outlet property="valueLabel" destination="bc0-9t-TGX" id="jQf-my-Hkq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

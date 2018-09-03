@@ -12,6 +12,9 @@
 		87E19192213D948B00838689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E19191213D948B00838689 /* Assets.xcassets */; };
 		87E19195213D948B00838689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E19193213D948B00838689 /* LaunchScreen.storyboard */; };
 		87E191A4213D9AF300838689 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E191A3213D9AF300838689 /* Card.swift */; };
+		87E191A6213DA26600838689 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E191A5213DA26600838689 /* CardController.swift */; };
+		87E191AA213DA34F00838689 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E191A9213DA34F00838689 /* CardViewController.swift */; };
+		87E191AF213DCE7C00838689 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E191AE213DCE7C00838689 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		87E19194213D948B00838689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E19196213D948B00838689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E191A3213D9AF300838689 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		87E191A5213DA26600838689 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		87E191A9213DA34F00838689 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		87E191AE213DCE7C00838689 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		87E1919C213D9A2500838689 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				87E191AB213DCE4400838689 /* Theme */,
 				87E1918A213D948A00838689 /* AppDelegate.swift */,
 				87E19191213D948B00838689 /* Assets.xcassets */,
 				87E19193213D948B00838689 /* LaunchScreen.storyboard */,
@@ -85,6 +92,7 @@
 		87E191A0213D9A5400838689 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				87E191A5213DA26600838689 /* CardController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -92,6 +100,7 @@
 		87E191A1213D9A6400838689 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				87E191A9213DA34F00838689 /* CardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -102,6 +111,14 @@
 				87E1918E213D948A00838689 /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		87E191AB213DCE4400838689 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				87E191AE213DCE7C00838689 /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E191AA213DA34F00838689 /* CardViewController.swift in Sources */,
 				87E191A4213D9AF300838689 /* Card.swift in Sources */,
+				87E191AF213DCE7C00838689 /* Theme.swift in Sources */,
+				87E191A6213DA26600838689 /* CardController.swift in Sources */,
 				87E1918B213D948A00838689 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
